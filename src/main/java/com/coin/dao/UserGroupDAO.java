@@ -10,7 +10,7 @@ import com.coin.dbutil.JDBCutil;
 import com.coin.vo.UserGroupVO;
 
 public class UserGroupDAO {
-	String table_name = "usergroups";
+	String table_name = "user_groups";
 	static String[] columnNames = {
 			"id",
 			"name",
