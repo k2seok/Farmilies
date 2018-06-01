@@ -1,0 +1,7 @@
+{
+  "name": "Farmilies",
+  "version": "0.0.1",
+  "dependencies": {
+    "oracledb": "latest"
+  }
+}
