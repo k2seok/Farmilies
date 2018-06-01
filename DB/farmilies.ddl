@@ -1,3 +1,10 @@
+DROP TABLE CONTRACT CASCADE CONSTRAINTS;
+DROP TABLE WORK CASCADE CONSTRAINTS;
+DROP TABLE LOCATIONS CASCADE CONSTRAINTS;
+DROP TABLE USERS CASCADE CONSTRAINTS;
+DROP TABLE PICTURES CASCADE CONSTRAINTS;
+DROP TABLE USER_GROUPS CASCADE CONSTRAINTS;
+
 /**********************************/
 /* Table Name: USER_GROUPS */
 /**********************************/
@@ -107,7 +114,7 @@ COMMENT ON COLUMN WORK.location_id is 'location_id';
 CREATE TABLE CONTRACT(
 		id                            		NUMBER(10)		 NOT NULL,
 		rating                        		NUMBER(10,2)		 NULL ,
-		comment                       		VARCHAR2(2000)		 NULL ,
+		comments                      		VARCHAR2(2000)		 NULL ,
 		worker_id                     		VARCHAR2(50)		 NOT NULL,
 		work_id                       		NUMBER(10)		 NOT NULL
 );
@@ -115,7 +122,7 @@ CREATE TABLE CONTRACT(
 COMMENT ON TABLE CONTRACT is 'CONTRACT';
 COMMENT ON COLUMN CONTRACT.id is 'id';
 COMMENT ON COLUMN CONTRACT.rating is 'rating';
-COMMENT ON COLUMN CONTRACT.comment is 'comment';
+COMMENT ON COLUMN CONTRACT.comments is 'comments';
 COMMENT ON COLUMN CONTRACT.worker_id is 'worker_id';
 COMMENT ON COLUMN CONTRACT.work_id is 'work_id';
 
