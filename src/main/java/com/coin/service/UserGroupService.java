@@ -1,5 +1,9 @@
 package com.coin.service;
 
-public interface UserGroupService {
+import java.util.List;
 
+import com.coin.vo.UserGroupVO;
+
+public interface UserGroupService {
+	public List<UserGroupVO> getListBy(String type, String val, boolean like);
 }

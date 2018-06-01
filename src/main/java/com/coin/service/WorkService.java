@@ -1,5 +1,9 @@
 package com.coin.service;
 
-public interface WorkService {
+import java.util.List;
 
+import com.coin.vo.WorkVO;
+
+public interface WorkService {
+	public List<WorkVO> getListBy(String type, String val, boolean like);
 }

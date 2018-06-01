@@ -1,5 +1,7 @@
 package com.coin.vo;
 
+import java.sql.Date;
+
 public class UserGroupVO {
 	/*
 	 * 
@@ -20,8 +22,8 @@ CREATE TABLE USER_GROUPS(
 	
 	String id;
 	String name;
-	String update_at;
-	String create_at;
+	Date update_at;
+	Date create_at;
 	String location_id;
 	public String getId() {
 		return id;
@@ -35,16 +37,17 @@ CREATE TABLE USER_GROUPS(
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getUpdate_at() {
+
+	public Date getUpdate_at() {
 		return update_at;
 	}
-	public void setUpdate_at(String update_at) {
+	public void setUpdate_at(Date update_at) {
 		this.update_at = update_at;
 	}
-	public String getCreate_at() {
+	public Date getCreate_at() {
 		return create_at;
 	}
-	public void setCreate_at(String create_at) {
+	public void setCreate_at(Date create_at) {
 		this.create_at = create_at;
 	}
 	public String getLocation_id() {

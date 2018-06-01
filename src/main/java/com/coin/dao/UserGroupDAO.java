@@ -53,8 +53,8 @@ public class UserGroupDAO {
 				UserGroupVO vo = new UserGroupVO();
 				vo.setId(rs.getString(columnNames[0]));
 				vo.setName(rs.getString(columnNames[1]));
-				vo.setCreate_at(rs.getString(columnNames[2]));
-				vo.setUpdate_at(rs.getString(columnNames[3]));
+				vo.setCreate_at(rs.getDate(columnNames[2]));
+				vo.setUpdate_at(rs.getDate(columnNames[3]));
 				list.add(vo);
 			}
 			

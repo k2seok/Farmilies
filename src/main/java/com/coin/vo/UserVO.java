@@ -1,5 +1,7 @@
 package com.coin.vo;
 
+import java.sql.Date;
+
 public class UserVO {
 	/*
 
@@ -45,8 +47,8 @@ CREATE TABLE CONTRACT(
 	
 	
 	String id;
-	String update_at;
-	String create_at;
+	Date update_at;
+	Date create_at;
 	String email;
 	String password;
 	String first_name;
@@ -59,16 +61,16 @@ CREATE TABLE CONTRACT(
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getUpdate_at() {
+	public Date getUpdate_at() {
 		return update_at;
 	}
-	public void setUpdate_at(String update_at) {
+	public void setUpdate_at(Date update_at) {
 		this.update_at = update_at;
 	}
-	public String getCreate_at() {
+	public Date getCreate_at() {
 		return create_at;
 	}
-	public void setCreate_at(String create_at) {
+	public void setCreate_at(Date create_at) {
 		this.create_at = create_at;
 	}
 	public String getEmail() {

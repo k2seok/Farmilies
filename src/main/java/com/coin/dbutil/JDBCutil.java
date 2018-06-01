@@ -8,12 +8,12 @@ import java.sql.SQLException;
 
 public class JDBCutil {
 	
+	static Connection conn;
 	
-	public static Connection getConnection() {
+	static {
 		String URL = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
         String USER = "system";
         String PASS = "1234";
-		Connection conn = null;
         
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -22,7 +22,15 @@ public class JDBCutil {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        return conn;
+        
+	}
+	
+	public static Connection getConnection() throws Exception {
+		if(conn != null) {
+			return conn;
+		}else {
+			throw new Exception();
+		}
 	}
 	
 	public static void close(Connection con, PreparedStatement ps, ResultSet rs) {
@@ -30,7 +38,6 @@ public class JDBCutil {
 		try {
 			if(rs != null) rs.close();
 			if(ps != null) ps.close();
-			if(con != null) con.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -1,5 +1,9 @@
 package com.coin.service;
 
-public interface PictureService {
+import java.util.List;
 
+import com.coin.vo.PictureVO;
+
+public interface PictureService {
+	public List<PictureVO> getListBy(String type, String val, boolean like);
 }
