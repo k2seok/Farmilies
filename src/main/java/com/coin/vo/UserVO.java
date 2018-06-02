@@ -109,6 +109,12 @@ CREATE TABLE CONTRACT(
 	public void setPicture_id(String picture_id) {
 		this.picture_id = picture_id;
 	}
+	@Override
+	public String toString() {
+		return "UserVO [id=" + id + ", update_at=" + update_at + ", create_at=" + create_at + ", email=" + email
+				+ ", password=" + password + ", first_name=" + first_name + ", last_name=" + last_name + ", group_id="
+				+ group_id + ", picture_id=" + picture_id + "]";
+	}
 	
 	
 	

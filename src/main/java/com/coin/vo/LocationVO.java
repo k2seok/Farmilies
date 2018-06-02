@@ -68,6 +68,11 @@ public class LocationVO {
 	public void setRoad_address(String road_address) {
 		this.road_address = road_address;
 	}
+	@Override
+	public String toString() {
+		return "LocationVO [id=" + id + ", address_name=" + address_name + ", address_type=" + address_type + ", x=" + x
+				+ ", y=" + y + ", region_address=" + region_address + ", road_address=" + road_address + "]";
+	}
 		
 		
 		

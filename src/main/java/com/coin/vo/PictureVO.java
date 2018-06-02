@@ -36,6 +36,10 @@ CREATE TABLE PICTURES(
 	public void setPicname(String picname) {
 		this.picname = picname;
 	}
+	@Override
+	public String toString() {
+		return "PictureVO [id=" + id + ", picname=" + picname + ", pic_loc=" + pic_loc + "]";
+	}
 
 	
 

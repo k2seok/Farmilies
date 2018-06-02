@@ -56,6 +56,11 @@ CREATE TABLE USER_GROUPS(
 	public void setLocation_id(String location_id) {
 		this.location_id = location_id;
 	}
+	@Override
+	public String toString() {
+		return "UserGroupVO [id=" + id + ", name=" + name + ", update_at=" + update_at + ", create_at=" + create_at
+				+ ", location_id=" + location_id + "]";
+	}
 	
 	
 	

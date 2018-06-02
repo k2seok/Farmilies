@@ -60,8 +60,8 @@
             </targetConnections>
             <error></error>
             <linkedPath></linkedPath>
-            <tableName>USER_GROUPS</tableName>
-            <logicalName>USER_GROUPS</logicalName>
+            <tableName>USERGROUPS</tableName>
+            <logicalName>USERGROUPS</logicalName>
             <description>User Groups,&#xd;
 This table contains the privilege of users,&#xd;
 which means Administrator ,Farmer and Citizen.</description>
@@ -472,8 +472,8 @@ This contains the location address and geometrical coordinates as well</descript
                         <targetConnections/>
                         <error></error>
                         <linkedPath></linkedPath>
-                        <tableName>CONTRACT</tableName>
-                        <logicalName>CONTRACT</logicalName>
+                        <tableName>CONTRACTS</tableName>
+                        <logicalName>CONTRACTS</logicalName>
                         <description>CONTRACT TABLE</description>
                         <columns>
                           <net.java.amateras.db.visual.model.ColumnModel>
@@ -567,8 +567,8 @@ This contains the location address and geometrical coordinates as well</descript
                   </targetConnections>
                   <error></error>
                   <linkedPath></linkedPath>
-                  <tableName>WORK</tableName>
-                  <logicalName>WORK</logicalName>
+                  <tableName>WORKS</tableName>
+                  <logicalName>WORKS</logicalName>
                   <description>Page table;&#xd;
 </description>
                   <columns>

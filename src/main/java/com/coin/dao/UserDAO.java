@@ -67,6 +67,11 @@ public class UserDAO {
 				likeOrEquals = "="+val;				
 			}
 			
+			System.out.println("select * from "
+										+table_name
+										+" where " 
+										+ type 
+										+likeOrEquals);
 			
 			ps = con.prepareStatement("select * from "
 										+table_name

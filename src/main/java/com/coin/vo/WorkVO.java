@@ -86,6 +86,11 @@ CREATE TABLE CONTRACT(
 	public void setLocation_id(String location_id) {
 		this.location_id = location_id;
 	}
+	@Override
+	public String toString() {
+		return "WorkVO [id=" + id + ", pic_id=" + pic_id + ", hirer_id=" + hirer_id + ", title=" + title
+				+ ", description=" + description + ", location_id=" + location_id + "]";
+	}
 	
 	
 	

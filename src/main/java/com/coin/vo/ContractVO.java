@@ -80,6 +80,11 @@ CREATE TABLE CONTRACT(
 	public void setWork_id(String work_id) {
 		this.work_id = work_id;
 	}
+	@Override
+	public String toString() {
+		return "ContractVO [id=" + id + ", rating=" + rating + ", comments=" + comments + ", worker_id=" + worker_id
+				+ ", work_id=" + work_id + "]";
+	}
 	
 		
 
