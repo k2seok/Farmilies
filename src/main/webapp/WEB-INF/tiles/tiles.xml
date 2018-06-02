@@ -42,6 +42,27 @@
 		<put-attribute name="body" value="/WEB-INF/views/map.jsp" />
 	</definition>
 	
+	
+		<definition name="mypage" extends="empty">
+		<put-attribute name="body" value="/WEB-INF/views/my_page.jsp" />
+	</definition>
+	
+			<definition name="contract" extends="empty">
+		<put-attribute name="body" value="/WEB-INF/views/contract.jsp" />
+	</definition>
+	
+			<definition name="select" extends="empty">
+		<put-attribute name="body" value="/WEB-INF/views/select.jsp" />
+	</definition>
+	
+			<definition name="search" extends="empty">
+		<put-attribute name="body" value="/WEB-INF/views/search.jsp" />
+	</definition>
+	
+<!-- 	//test -->
+		<definition name="index" extends="empty">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
 
 
 </tiles-definitions>

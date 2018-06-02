@@ -20,7 +20,7 @@
 	<mvc:resources location="/resources/assets/" mapping="/assets/**"  />
 	<mvc:resources location="/resources/bootstrap3/" mapping="/bootstrap3/**"  />
 	<mvc:resources location="/resources/assets/" mapping="/jquery/**"  />
-	<mvc:resources location="/resources/" mapping="/style/**"  />
+	<mvc:resources location="/resources/assets/" mapping="/style/**"  />
 	<mvc:resources location="/resources/map" mapping="/map/**"  />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 

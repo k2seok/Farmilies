@@ -13,6 +13,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.coin.dao.UserDAO;
+
 /**
  * Handles requests for the application home page.
  */
@@ -100,4 +102,57 @@ public class HomeController {
 		return home(request, response);
 	}
 
+	
+	//일꾼이 자신이 일한 내역을 보는 곳
+	@RequestMapping(value = "/mypage", method = RequestMethod.GET)
+	public String goMypage(Locale locale, Model model) {
+
+		return "mypage";
+	}
+
+	//계약하는 부분
+	@RequestMapping(value = "/contract", method = RequestMethod.GET)
+	public String contracts(Locale locale, Model model) {
+
+		return "contract";
+	}
+	
+	
+	
+	//전체조회(농부가 올린거를 관리자가 조회)
+	@RequestMapping(value = "/selectList", method = RequestMethod.GET)
+	public String selectAll(Locale locale, Model model) {
+
+		return "select";
+	}
+	
+	//일할 곳 검색 및 조회(농부가 올린거를 일꾼이 조회)
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public String searchAll(Locale locale, Model model) {
+
+		return "search";
+	}
+	
+	
+	//등록 및 수정하는 곳(농부가 자신이 게시물을 올리고, 수정하는 부분)
+		@RequestMapping(value = "/index", method = RequestMethod.GET)
+		public String insert_farmer(HttpServletRequest request, Model model) {
+
+			UserDAO user = new UserDAO();
+			
+//			Collection<?> attributeValues = user.getListByIDLike("");
+//			model.addAllAttributes(attributeValues);
+			return "index";
+		}
+	
+	/*
+	@RequestMapping(value = "/board_write", method = RequestMethod.GET)
+	public String board_write(Locale locale, Model model) {
+
+		return "board_write";
+	}*/
+	
+	
+	
+	
 }
