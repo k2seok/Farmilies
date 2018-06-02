@@ -42,8 +42,8 @@ public class HomeController {
 		}
 
 		if (id.length() > 0) {
-			Object obj = request.getAttribute("comment");
-			System.out.println(obj.toString());
+//			Object obj = request.getAttribute("comment");
+//			System.out.println(obj.toString());
 		}
 
 		return "main";
