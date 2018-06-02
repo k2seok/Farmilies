@@ -39,20 +39,21 @@
 					</h2>
 				</div>
 				<div class="col-lg-5 p-3">
-					<form class="p-4" method="post" action="">
+					<form class="p-4" id="signinForm" method="post" action="signin">
 						<h4 class="mb-4 text-center text-primary">
-							<label for="create">지금 시작하세요</label> <a class="btn btn-primary"
+							<label id="comment" for="create">
+							<% %>지금 시작하세요</label> <a class="btn btn-primary"
 								id="create" href="signup"> 회원가입 </a>
 						</h4>
 						<div class="form-group">
-							<label>이름</label> <input class="form-control" placeholder="ID"
-								type="text">
+							<label>이름</label> <input name="user_id" id="user_id"
+								class="form-control" placeholder="ID" type="text">
 						</div>
 						<div class="form-group">
-							<label>비밀번호</label> <input class="form-control" type="text">
+							<label>비밀번호</label> <input name="user_pw" class="form-control"
+								type="text">
 						</div>
-						<button type="submit"
-							class="btn btn-block btn-success mt-4 p-2 shadowed">Login</button>
+						<button type="submit" class="btn btn-block btn-success mt-4 p-2">Login</button>
 					</form>
 				</div>
 			</div>
