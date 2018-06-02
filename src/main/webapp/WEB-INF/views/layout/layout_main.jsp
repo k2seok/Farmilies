@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="row img-src"
-		style="background-image: url('resources/assets/img/cover_4.jpg')">
+		style="background-image: url('assets/img/cover_4.jpg')">
 
 
 		<tiles:insertAttribute name="body" />

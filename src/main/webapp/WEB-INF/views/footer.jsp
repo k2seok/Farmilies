@@ -1,1 +1,1 @@
-Copyright ⓒ Farmiles
+Copyright & Farmiles

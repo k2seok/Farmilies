@@ -15,8 +15,8 @@
 	name="viewport">
 <meta name="viewport" content="width=device-width">
 <link href="bootstrap3/css/bootstrap.css" rel="stylesheet">
-<link href="resources/assets/css/gsdk.css" rel="stylesheet">
-<link href="resources/assets/css/demo.css" rel="stylesheet">
+<link href="assets/css/gsdk.css" rel="stylesheet">
+<link href="assets/css/demo.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link href="bootstrap3/css/font-awesome.css" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Grand+Hotel"
@@ -26,9 +26,9 @@
 	<div class="main">
 		<div class="blurred-container">
 			<div class="img-src"
-				style="background-image: url('resources/assets/img/cover_4.jpg')"></div>
+				style="background-image: url('assets/img/cover_4.jpg')"></div>
 			<div class="img-src blur"
-				style="background-image: url('resources/assets/img/cover_4_blur.jpg')"></div>
+				style="background-image: url('assets/img/cover_4_blur.jpg')"></div>
 			<div class="row">
 				<div class="col-lg-7 align-self-center text-lg-left text-center">
 					<h1 class="mb-0 mt-4 display-4">
@@ -39,21 +39,20 @@
 					</h2>
 				</div>
 				<div class="col-lg-5 p-3">
-					<form class="p-4" id="signinForm" method="post" action="signin">
+					<form class="p-4" method="post" action="">
 						<h4 class="mb-4 text-center text-primary">
-							<label id="comment" for="create">
-							<% %>지금 시작하세요</label> <a class="btn btn-primary"
+							<label for="create">지금 시작하세요</label> <a class="btn btn-primary"
 								id="create" href="signup"> 회원가입 </a>
 						</h4>
 						<div class="form-group">
-							<label>이름</label> <input name="user_id" id="user_id"
-								class="form-control" placeholder="ID" type="text">
-						</div>
-						<div class="form-group">
-							<label>비밀번호</label> <input name="user_pw" class="form-control"
+							<label>이름</label> <input class="form-control" placeholder="ID"
 								type="text">
 						</div>
-						<button type="submit" class="btn btn-block btn-success mt-4 p-2">Login</button>
+						<div class="form-group">
+							<label>비밀번호</label> <input class="form-control" type="text">
+						</div>
+						<button type="submit"
+							class="btn btn-block btn-success mt-4 p-2 shadowed">Login</button>
 					</form>
 				</div>
 			</div>

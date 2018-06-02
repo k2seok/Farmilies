@@ -14,7 +14,7 @@
 <link
 	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
-<link href="assets\css\board.css" rel="stylesheet" type="text/css">
+<link href="assets/css/board.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>

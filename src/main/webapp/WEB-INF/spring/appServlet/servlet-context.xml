@@ -17,7 +17,11 @@
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
 		up static resources in the ${webappRoot}/resources directory -->
-	<mvc:resources location="/resources/" mapping="/resources/**"  />
+	<mvc:resources location="/resources/assets/" mapping="/assets/**"  />
+	<mvc:resources location="/resources/bootstrap3/" mapping="/bootstrap3/**"  />
+	<mvc:resources location="/resources/assets/" mapping="/jquery/**"  />
+	<mvc:resources location="/resources/" mapping="/style/**"  />
+	<mvc:resources location="/resources/map" mapping="/map/**"  />
 
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
 		in the /WEB-INF/views directory -->
@@ -26,7 +30,6 @@
 	<!-- <beans:property name="suffix" value=".jsp" /> -->
 	<!-- </beans:bean> -->
 
-	<context:component-scan base-package="com.coin.farmilies" />
 
 	<bean id="tilesviewResolver"
 		class="org.springframework.web.servlet.view.tiles3.TilesViewResolver" />

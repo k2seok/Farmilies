@@ -27,24 +27,24 @@ public class HomeController {
 	@RequestMapping(value = "/main", method = RequestMethod.GET)
 	public String home(HttpServletRequest request, HttpServletResponse response) {
 
-		String id = "";
-
-		if (request.getCookies().length > 0) {
-			Cookie[] cookies = request.getCookies();
-			for (int i = 0; i < cookies.length; i++) {
-				cookies[i].getName().equals("id");
-				if (cookies[i].getName().equals("id")) {
-					id = cookies[i].getValue();
-					break;
-				}
-				// TODO view change
-			}
-		}
-
-		if (id.length() > 0) {
-//			Object obj = request.getAttribute("comment");
-//			System.out.println(obj.toString());
-		}
+//		String id = "";
+//
+//		if (request.getCookies().length > 0) {
+//			Cookie[] cookies = request.getCookies();
+//			for (int i = 0; i < cookies.length; i++) {
+//				cookies[i].getName().equals("id");
+//				if (cookies[i].getName().equals("id")) {
+//					id = cookies[i].getValue();
+//					break;
+//				}
+//				// TODO view change
+//			}
+//		}
+//
+//		if (id.length() > 0) {
+////			Object obj = request.getAttribute("comment");
+////			System.out.println(obj.toString());
+//		}
 
 		return "main";
 	}
@@ -61,16 +61,27 @@ public class HomeController {
 		return "board_write";
 	}
 
+	@RequestMapping(value = "/map", method = RequestMethod.GET)
+	public String board_map(HttpServletRequest request, HttpServletResponse response) {
+
+		
+		response.addHeader("map_x", "0.5");
+		response.addHeader("map_y", "1.5");
+		return "map";
+	}
+	
+	
+	
 	@RequestMapping(value = "/signin", method = RequestMethod.POST)
 	public String signin(HttpServletRequest request, HttpServletResponse response) {
-		// TODO ·Î±×ÀÎ¼º°ø½Ã main_login, fail ½Ã ´Ù½Ã redirect
+		// TODO ï¿½Î±ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ main_login, fail ï¿½ï¿½ ï¿½Ù½ï¿½ redirect
 
 		String id = request.getParameter("user_id").toString();
 		System.out.println(id);
 
 		String pw = request.getParameter("user_pw").toString();
 
-		// TODO user select() È£Ãâ
+		// TODO user select() È£ï¿½ï¿½
 		boolean success = true;
 		if (success) {
 			// setMaxAge is day hour min sec
